@@ -1,4 +1,4 @@
-tugnde
+t3ugnde
 ======
 
-Simple FluidTYPO3 ProviderExtension for the TUGN.de website. For show purposes :)
+Simple FluidTYPO3 ProviderExtension for the T3UGN.de website. For show purposes :)
