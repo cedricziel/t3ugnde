@@ -1,0 +1,45 @@
+{namespace flux=Tx_Flux_ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Page"/>
+<div xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+	 xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Configuration">
+		<flux:flexform id="1column" label="1 Column" icon="{f:uri.resource(path: 'images/Landingpage.png')}">
+			<flux:flexform.grid>
+				<flux:flexform.grid.row>
+					<flux:flexform.grid.column name="Header" colPos="1" label="Header">
+						<flux:flexform.content name="contentheader"/>
+					</flux:flexform.grid.column>
+				</flux:flexform.grid.row>
+				<flux:flexform.grid.row>
+					<flux:flexform.grid.column name="Content" colPos="0" label="Content">
+						<flux:flexform.content name="contentmain" label="Content"/>
+					</flux:flexform.grid.column>
+				</flux:flexform.grid.row>
+				<flux:flexform.grid.row>
+					<flux:flexform.grid.column name="Footer" colPos="2" label="Footer">
+						<flux:flexform.content name="contentfooter"/>
+					</flux:flexform.grid.column>
+				</flux:flexform.grid.row>
+			</flux:flexform.grid>
+		</flux:flexform>
+	</f:section>
+
+	<f:section name="Preview">
+		<flux:widget.grid/>
+	</f:section>
+
+	<f:section name="Resources">
+		<f:render partial="SharedResources" section="SharedResources"/>
+	</f:section>
+
+	<f:section name="Header">
+		<v:content.render column="1"/>
+	</f:section>
+
+	<f:section name="Content">
+		<v:content.render column="0"/>
+	</f:section>
+</div>
