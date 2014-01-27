@@ -1,0 +1,5 @@
+plugin.tx_t3ugnde.view {
+	templateRootPath = EXT:t3ugnde/Resources/Private/Templates/
+	partialRootPath = EXT:t3ugnde/Resources/Private/Partials/
+	layoutRootPath = EXT:t3ugnde/Resources/Private/Layouts/
+}

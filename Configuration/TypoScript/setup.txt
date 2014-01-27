@@ -1,0 +1,5 @@
+plugin.tx_t3ugnde.view {
+	templateRootPath = {$plugin.tx_t3ugnde.view.templateRootPath}
+	partialRootPath = {$plugin.tx_t3ugnde.view.partialRootPath}
+	layoutRootPath = {$plugin.tx_t3ugnde.view.layoutRootPath}
+}
